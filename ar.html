@@ -1,0 +1,149 @@
+<html>
+
+<head>
+  <title>EduQuest AR Scanner</title>
+  <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.4.0/dist/aframe-extras.min.js"></script>
+</head>
+
+<body>
+  <a-scene arjs>
+    <a-assets>
+      <a-asset-item id="apple" src="./models/apple-model"></a-asset-item>
+      <a-asset-item id="bat" src="./models/bat/scene.gltf"></a-asset-item>
+      <a-asset-item id="cat" src="./models/cat.glb"></a-asset-item>
+      <a-asset-item id="dog" src="./models/dog/scene.gltf"></a-asset-item>
+      <a-asset-item id="elephant" src="./models/elephant/scene.gltf"></a-asset-item>
+      <a-asset-item id="fish" src="./models/fish/scene.gltf"></a-asset-item>
+      <a-asset-item id="grapes" src="./models/grapes/scene.gltf"></a-asset-item>
+      <a-asset-item id="hat" src="./models/hat/scene.gltf"></a-asset-item>
+      <a-asset-item id="ice-cream" src="./models/ice-cream/scene.gltf"></a-asset-item>
+      <a-asset-item id="jug" src="./models/jug/scene.gltf"></a-asset-item>
+      <a-asset-item id="kite" src="./models/kite/scene.gltf"></a-asset-item>
+      <a-asset-item id="lion" src="./models/lion/scene.gltf"></a-asset-item>
+      <a-asset-item id="mango" src="./models/mango/scene.gltf"></a-asset-item>
+      <a-asset-item id="nail" src="./models/nail/scene.gltf"></a-asset-item>
+      <a-asset-item id="orange" src="./models/orange/scene.gltf"></a-asset-item>
+      <a-asset-item id="parrot" src="./models/parrot/scene.gltf"></a-asset-item>
+      <a-asset-item id="quill" src="./models/quill/scene.gltf"></a-asset-item>
+      <a-asset-item id="rabbit" src="./models/rabbit/scene.gltf"></a-asset-item>
+      <a-asset-item id="sun" src="./models/sun/scene.gltf"></a-asset-item>
+      <a-asset-item id="tree" src="./models/tree/scene.gltf"></a-asset-item>
+      <a-asset-item id="umbrella" src="./models/umbrella/scene.gltf"></a-asset-item>
+      <a-asset-item id="violin" src="./models/violin/scene.gltf"></a-asset-item>
+      <a-asset-item id="watermelon" src="./models/watermelon/scene.gltf"></a-asset-item>
+      <a-asset-item id="xylophone" src="./models/xylophone/scene.gltf"></a-asset-item>
+      <a-asset-item id="yacht" src="./models/yacht/scene.gltf"></a-asset-item>
+      <a-asset-item id="zebra" src="./models/zebra/scene.gltf"></a-asset-item>
+    </a-assets>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-a.patt">
+      <a-entity gltf-model="#apple" scale="10 10 10" position="0 0 0"></a-entity>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-b.patt">
+      <a-entity gltf-model="#bat" scale="2 2 2" position="0 0 0"></a-entity>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-c.patt">
+      <a-gltf-model src="#cat" scale="0.5 0.5 0.5" rotation="0 0 0"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-d.patt">
+      <a-gltf-model src="#dog" scale="0.03 0.03 0.03" rotation="90 180 180" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-e.patt">
+      <a-gltf-model src="#elephant" scale="0.02 0.02 0.02" rotation="0 0 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-f.patt">
+      <a-gltf-model src="#fish" scale="0.5 0.5 0.5" rotation="0 0 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-g.patt">
+      <a-gltf-model src="#grapes" scale="0.5 0.5 0.5" rotation="0 0 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-h.patt">
+      <a-gltf-model src="#hat" scale="0.05 0.05 0.05" rotation="0 0 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-i.patt">
+      <a-gltf-model src="#ice-cream" scale="0.09 0.09 0.09" rotation="0 0 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-j.patt">
+      <a-gltf-model src="#jug" scale="1 1 1" rotation="0 90 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-k.patt">
+      <a-gltf-model src="#kite" scale="2 2 2" rotation="0 90 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-l.patt">
+      <a-gltf-model src="#lion" scale="1 1 1" rotation="0 90 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-m.patt">
+      <a-gltf-model src="#mango" scale="0.09 0.09 0.09" rotation="0 0 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-n.patt">
+      <a-gltf-model src="#nail" scale="5 5 5" rotation="0 90 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-o.patt">
+      <a-gltf-model src="#orange" scale="0.05 0.05 0.05" rotation="0 90 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-p.patt">
+      <a-gltf-model src="#parrot" scale="5 5 5" rotation="0 90 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-q.patt">
+      <a-gltf-model src="#quill" scale="5 5 5" rotation="0 90 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-r.patt">
+      <a-gltf-model src="#rabbit" scale="0.09 0.09 0.09" rotation="0 90 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-s.patt">
+      <a-gltf-model src="#sun" scale="0.1 0.1 0.1" rotation="0 90 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-t.patt">
+      <a-gltf-model src="#tree" scale="0.01 0.01 0.01" rotation="0 0 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-u.patt">
+      <a-gltf-model src="#umbrella" scale="0.3 0.3 0.3" rotation="0 0 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-v.patt">
+      <a-gltf-model src="#violin" scale="0.05 0.05 0.05" rotation="0 0 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-w.patt">
+      <a-gltf-model src="#watermelon" scale="0.005 0.005 0.005" rotation="0 0 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-x.patt">
+      <a-gltf-model src="#xylophone" scale="0.05 0.05 0.05" rotation="0 0 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-y.patt">
+      <a-gltf-model src="#yacht" scale="1.5 1.5 1.5" rotation="0 0 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset="pattern" type="pattern" url="./patterns/pattern-letter-z.patt">
+      <a-gltf-model src="#zebra" scale="0.5 0.5 0.5" rotation="0 0 0" animation-mixer></a-gltf-model>
+    </a-marker>
+
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+
+</html>
